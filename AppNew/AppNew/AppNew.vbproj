@@ -1,0 +1,1146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5EAB8B71-E77D-4480-93F8-AE4827928FC1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>AppNew.My.MyApplication</StartupObject>
+    <RootNamespace>AppNew</RootNamespace>
+    <AssemblyName>AppNew</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>AppNew.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>AppNew.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>home.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CloudToolkitN6, Version=0.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CloudToolkitN6.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Design, Version=11.2.0.1, Culture=neutral, PublicKeyToken=2c9ff1fddc42653c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevComponents.DotNetBar.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Keyboard, Version=11.2.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevComponents.DotNetBar.Keyboard.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Schedule, Version=11.2.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevComponents.DotNetBar.Schedule.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.SuperGrid, Version=11.2.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevComponents.DotNetBar.SuperGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=11.2.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.Instrumentation, Version=11.2.0.1, Culture=neutral, PublicKeyToken=bc4a9d761ea44ef0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevComponents.Instrumentation.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.Instrumentation.Design, Version=11.2.0.1, Culture=neutral, PublicKeyToken=30cefae8f341f577, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevComponents.Instrumentation.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.SuperGrid.Design, Version=11.2.0.1, Culture=neutral, PublicKeyToken=1fea3f5d8d482bff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevComponents.SuperGrid.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.TreeGX, Version=11.2.0.1, Culture=neutral, PublicKeyToken=cfcbd7476b2389d1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevComponents.TreeGX.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dashboard.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dashboard.v14.2.Win, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Persistent.BaseImpl.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.2.Extensions, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.2.UI, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.2.Wizard, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.SQLDMO, Version=8.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Interop.SQLDMO.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.ConnectionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfoExtended, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.ConnectionInfoExtended.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.Smo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.Smo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SmoExtended, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.SmoExtended.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SqlEnum, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.Synchronization, Version=1.0.0.0" />
+    <Reference Include="Microsoft.Synchronization.Data, Version=2.0.0.0" />
+    <Reference Include="Microsoft.Synchronization.Data.Server, Version=2.0.0.0" />
+    <Reference Include="Microsoft.Synchronization.Data.SqlServerCe, Version=2.0.0.0" />
+    <Reference Include="OnBarcode.Barcode.WinForms, Version=6.0.0.41022, Culture=neutral, PublicKeyToken=4da8d7f865f70e30, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\OnBarcode.Barcode.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Authentication\Administrator\Form_Administrator.Designer.vb">
+      <DependentUpon>Form_Administrator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Authentication\Administrator\Form_Administrator.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authentication\Developer\developer.Designer.vb">
+      <DependentUpon>developer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Authentication\Developer\developer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authentication\UserOperator\F_Operator.Designer.vb">
+      <DependentUpon>F_Operator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Authentication\UserOperator\F_Operator.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class and Module\Master\ClassProduk.vb" />
+    <Compile Include="Class and Module\Master\ClassKategori.vb" />
+    <Compile Include="Class and Module\Master\ClassPembayaran.vb" />
+    <Compile Include="Class and Module\Master\ClassPemasok.vb" />
+    <Compile Include="Class and Module\Security\LoginSecurityAuth.vb" />
+    <Compile Include="Class and Module\Transaksi\Class Pembelian\ClassReturPembelian.vb" />
+    <Compile Include="Config\F_Config.Designer.vb">
+      <DependentUpon>F_Config.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Config\F_Config.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Database\BackupRestore.Designer.vb">
+      <DependentUpon>BackupRestore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Database\BackupRestore.vb" />
+    <Compile Include="Form\Master\Kategori\F_Add_Kategori.Designer.vb">
+      <DependentUpon>F_Add_Kategori.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Kategori\F_Add_Kategori.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Pemasok\F_Edit_Pemasok.Designer.vb">
+      <DependentUpon>F_Edit_Pemasok.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Pemasok\F_Edit_Pemasok.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Pemasok\F_Add_Pemasok.Designer.vb">
+      <DependentUpon>F_Add_Pemasok.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Pemasok\F_Add_Pemasok.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Pembayaran\F_Add_Pembayaran.Designer.vb">
+      <DependentUpon>F_Add_Pembayaran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Pembayaran\F_Add_Pembayaran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Produk\F_Edit_Produk.Designer.vb">
+      <DependentUpon>F_Edit_Produk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Produk\F_Edit_Produk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Produk\F_Add_Produk.Designer.vb">
+      <DependentUpon>F_Add_Produk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Produk\F_Add_Produk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\User\F_Edit_User.Designer.vb">
+      <DependentUpon>F_Edit_User.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\User\F_Edit_User.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\User\F_Add_User.Designer.vb">
+      <DependentUpon>F_Add_User.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\User\F_Add_User.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\User\F_User.Designer.vb">
+      <DependentUpon>F_User.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\User\F_User.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaksi\Beli\F_Transaksi_Beli.Designer.vb">
+      <DependentUpon>F_Transaksi_Beli.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaksi\Beli\F_Transaksi_Beli.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaksi\Retur Pembelian\F_Transaksi_Retur_Beli.Designer.vb">
+      <DependentUpon>F_Transaksi_Retur_Beli.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaksi\Retur Pembelian\F_Transaksi_Retur_Beli.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControllerApplication.vb" />
+    <Compile Include="Class and Module\Security\ClassCon.vb" />
+    <Compile Include="Class and Module\Security\ClassLogin.vb" />
+    <Compile Include="Class and Module\Master\ClassPengguna.vb" />
+    <Compile Include="Class and Module\Security\_Database.vb" />
+    <Compile Include="Class and Module\Transaksi\Class Pembelian\ClassPembelian.vb" />
+    <Compile Include="Class and Module\Transaksi\Class Penjualan\ClassPenjualan.vb" />
+    <Compile Include="Class and Module\Transaksi\Class Penjualan\ClassReturPenjualan.vb" />
+    <Compile Include="Form\Master\Pemasok\F_Pemasok.Designer.vb">
+      <DependentUpon>F_Pemasok.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Pemasok\F_Pemasok.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Pembayaran\F_Pembayaran.Designer.vb">
+      <DependentUpon>F_Pembayaran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Pembayaran\F_Pembayaran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Kategori\F_Kategori.Designer.vb">
+      <DependentUpon>F_Kategori.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Kategori\F_Kategori.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaksi\Penjualan\F_Transaksi_Jual.Designer.vb">
+      <DependentUpon>F_Transaksi_Jual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaksi\Penjualan\F_Transaksi_Jual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaksi\Retur Penjualan\F_Transaksi_Retur_Jual.Designer.vb">
+      <DependentUpon>F_Transaksi_Retur_Jual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaksi\Retur Penjualan\F_Transaksi_Retur_Jual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authentication\Login\F_Login.Designer.vb">
+      <DependentUpon>F_Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Authentication\Login\F_Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authentication\Administrator\F_Administrator.Designer.vb">
+      <DependentUpon>F_Administrator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Authentication\Administrator\F_Administrator.vb" />
+    <Compile Include="Form\Master\Produk\F_Produk.Designer.vb">
+      <DependentUpon>F_Produk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Produk\F_Produk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_SplashScreen.Designer.vb">
+      <DependentUpon>F_SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reporting\Faktur\F_Faktur.Designer.vb">
+      <DependentUpon>F_Faktur.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\Faktur\F_Faktur.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporting\Laporan\F_Filter.Designer.vb">
+      <DependentUpon>F_Filter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\Laporan\F_Filter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporting\ModuleReporting.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Authentication\Administrator\Form_Administrator.resx">
+      <DependentUpon>Form_Administrator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authentication\Developer\developer.resx">
+      <DependentUpon>developer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authentication\UserOperator\F_Operator.resx">
+      <DependentUpon>F_Operator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Config\F_Config.resx">
+      <DependentUpon>F_Config.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Database\Backuprestore.resx">
+      <DependentUpon>BackupRestore.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Kategori\F_Add_Kategori.resx">
+      <DependentUpon>F_Add_Kategori.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Kategori\F_Kategori.resx">
+      <DependentUpon>F_Kategori.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Pemasok\F_Edit_Pemasok.resx">
+      <DependentUpon>F_Edit_Pemasok.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Pemasok\F_Add_Pemasok.resx">
+      <DependentUpon>F_Add_Pemasok.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Pemasok\F_Pemasok.resx">
+      <DependentUpon>F_Pemasok.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Pembayaran\F_Add_Pembayaran.resx">
+      <DependentUpon>F_Add_Pembayaran.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Pembayaran\F_Pembayaran.resx">
+      <DependentUpon>F_Pembayaran.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Produk\F_Edit_Produk.resx">
+      <DependentUpon>F_Edit_Produk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Produk\F_Add_Produk.resx">
+      <DependentUpon>F_Add_Produk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\User\F_Edit_User.resx">
+      <DependentUpon>F_Edit_User.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\User\F_Add_User.resx">
+      <DependentUpon>F_Add_User.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\User\F_User.resx">
+      <DependentUpon>F_User.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaksi\Beli\F_Transaksi_Beli.resx">
+      <DependentUpon>F_Transaksi_Beli.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaksi\Penjualan\F_Transaksi_Jual.resx">
+      <DependentUpon>F_Transaksi_Jual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaksi\Retur Pembelian\F_Transaksi_Retur_Beli.resx">
+      <DependentUpon>F_Transaksi_Retur_Beli.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaksi\Retur Penjualan\F_Transaksi_Retur_Jual.resx">
+      <DependentUpon>F_Transaksi_Retur_Jual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authentication\Login\F_Login.resx">
+      <DependentUpon>F_Login.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authentication\Administrator\F_Administrator.resx">
+      <DependentUpon>F_Administrator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Produk\F_Produk.resx">
+      <DependentUpon>F_Produk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_SplashScreen.resx">
+      <DependentUpon>F_SplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\Faktur\F_Faktur.resx">
+      <DependentUpon>F_Faktur.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\Laporan\F_Filter.resx">
+      <DependentUpon>F_Filter.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Config\app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5 SP2</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\Rpt\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\282516_478724225499858_932995606_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Accept database.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Accept female user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Accept female user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add Card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add female user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add Male User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add Male User1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\address_book_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\address_book_new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Addressbook add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Addressbook add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Addressbook edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Addressbook edit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Addressbook edit2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Addressbook remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Addressbook search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Addressbook search1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Archive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Attach.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avariel-no-end-in-sight%28demo%29-20110719103608.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\azz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\azzs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backup-restore-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Basic data.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\books.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Browse 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar Month.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar Multiweek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar Multiweek1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar_multiweek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Catalog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clean.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clean1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_box_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_box_red1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer_data.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Couple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Couple1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cow wagon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data_transfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database_1_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database_1_512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download database.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download_database.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download_database1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drug_basket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DSC00122.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\easymoblog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit female user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit Male User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emblem_library.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Female user search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find_search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firefox alt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firefox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Glossary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Go back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hard_drive_backups_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help And Support.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item configuration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item configuration1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kaddressbook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kcoloredit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kghostview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kwrite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kwrite1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\laporan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lassists.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Library.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Log Out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo SMK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lorrygreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Man 2s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Man 2s1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical_pot_pills.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Money Bag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Money Calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moraine-lake5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nav.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Netvibes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new 21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no_photo_female.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\obat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\obatx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\old_edit_find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open Folder Accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open Folder Accept1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open Folder Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open Folder Add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open Folder Add2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open Folder Info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Order history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Order1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ordering.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ordering1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Package Accaept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Package Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\package editorspackage editors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plus1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printmgr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Remove female user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Remove Male User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report_check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reportorium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Safe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Semi success.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shopping cart accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shopping cart add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shopping cart add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sign up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\summer_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\symbol_help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tests.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tests1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Transaksi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ubah.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload_database.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload_database1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User Info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Windows Close Program.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Windows Close Program1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Windows Close Program2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Windows Close Program3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Winrar SZ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Woman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xxx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yahoo Widget Engine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\showtestreport_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\build_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addnewdatasource_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editdatasource_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addnewdatasource_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\showtestreport_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addgroupheader_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recurrence_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\packageproduct_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usergroup_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\publicfix_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addheader_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\knowledgebasearticle_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\knowledgebasearticle_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suggestion_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suggestion_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editcontact_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contact_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recurrence_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pie_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\article_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edittask_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addheader_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redo_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contact_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="home.ico" />
+    <Content Include="Install.ico" />
+    <None Include="Resources\Apply_16x16.png" />
+    <None Include="Resources\close-16x16.png" />
+    <None Include="Resources\paste-16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
